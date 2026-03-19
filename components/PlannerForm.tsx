@@ -126,6 +126,19 @@ export default function PlannerForm() {
           ? `Plan my day: ${neighborhood} → ${secondNeighborhood}`
           : 'Plan my day →'}
       </button>
+
+      {/* Explore link */}
+      {city && (
+        <div className="text-center">
+          <button
+            type="button"
+            onClick={() => router.push(`/explore?city=${encodeURIComponent(city)}`)}
+            className="text-sm text-slate-400 hover:text-forest transition underline underline-offset-4"
+          >
+            Browse restaurants & cafés in {city}
+          </button>
+        </div>
+      )}
     </form>
   );
 }
