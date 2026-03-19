@@ -46,6 +46,18 @@ export const CITIES: City[] = [
         subAreas: ['Chelsea', 'High Line', 'Meatpacking District', 'Hudson River Park'],
         center: [-74.0048, 40.7465],
       },
+      {
+        name: 'Williamsburg',
+        description: "Brooklyn's creative engine — waterfront views, vinyl shops, natural wine, weekend markets",
+        subAreas: ['North Williamsburg', 'South Williamsburg', 'Bedford Avenue', 'East River waterfront', 'Bushwick border'],
+        center: [-73.9566, 40.7081],
+      },
+      {
+        name: 'DUMBO, Brooklyn Heights & Fort Greene',
+        description: 'Cobblestone streets under the bridge, brownstone promenades, farmer markets, arts scene',
+        subAreas: ['DUMBO', 'Brooklyn Heights', 'Fort Greene', 'Brooklyn Bridge Park', 'Fulton Street'],
+        center: [-73.9877, 40.6960],
+      },
     ],
   },
   {

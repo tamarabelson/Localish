@@ -28,11 +28,13 @@ export const CURATED_PLACES: CityPlaces[] = [
   {
     city: 'New York',
     zones: [
-      { zone: 'West Village, SoHo & Tribeca', places: [] },
-      { zone: 'East Village & Lower East Side', places: [] },
+      { zone: 'West Village, SoHo & Tribeca', places: [{ name: 'Via Carota', type: 'restaurant', subArea: 'West Village'}, {name: 'The Commerce Inn', type: 'restaurant', subArea: 'West Village'}, {name: 'King', type: 'restaurant', subArea: 'Soho'}, {name: 'Shmone', type: 'restaurant', subArea: 'West Village'}, {name: 'Zimmis', type: 'restaurant', subArea: 'West Village'}, {name: 'Bar Pisellino', type: 'bar', subArea: 'West Village'}, {name: 'I Sodi', type: 'restaurant', subArea: 'West Village'}, {name: 'Croft Alley', type: 'restaurant', subArea: 'Soho', note: 'Great Breakfast/Lunch Spot'}, {name: 'Sant Ambreous', type: 'coffee', subArea: 'Soho'}, {name: 'Pantry', type: 'coffee', subArea: 'Soho', note: 'Cool Matcha Stop'}] },
+      { zone: 'East Village & Lower East Side', places: [{name: 'Le Dive', type: 'bar', subArea: 'Lower East Side'}, {name: 'Corner Bar', type: 'restaurant', subArea: 'Lower East Side'}, {name: 'Casino', type: 'restaurant', subArea: 'Lower East Side'}, {name: "Cervo's", type: 'restaurant', subArea: 'Lower East Side'}, {name: 'Tolo', type: 'restaurant', subArea: 'Lower East Side'}, {name: 'Time Again', type: 'bar', subArea: 'Lower East Side'}, {name: 'Colbo Next Door', type: 'bar', subArea: 'Lower East Side', note: 'Aesthetic Low Key Wine Bar'}, {name: 'Schmuck', type: 'bar', subArea: 'East Village'}] },
       { zone: 'Chelsea & the High Line', places: [] },
       { zone: 'Midtown', places: [] },
       { zone: 'Uptown', places: [] },
+      { zone: 'Williamsburg', places: [] },
+      { zone: 'DUMBO, Brooklyn Heights & Fort Greene', places: [] },
     ],
   },
   {
