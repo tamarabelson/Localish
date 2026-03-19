@@ -2,14 +2,14 @@
 
 import { useSearchParams, useRouter } from 'next/navigation';
 import { Suspense } from 'react';
-import { getCityByName } from '@/lib/cities';
+import { CURATED_PLACES } from '@/lib/places';
 import PlaceList from '@/components/PlaceList';
 
 function ExploreContent() {
   const params = useSearchParams();
   const router = useRouter();
   const city = params.get('city') ?? '';
-  const cityData = getCityByName(city);
+  const cityData = CURATED_PLACES.find((c) => c.city === city);
 
   if (!cityData) {
     router.replace('/');
@@ -41,12 +41,12 @@ function ExploreContent() {
         </div>
 
         <div className="flex flex-col gap-4">
-          {cityData.neighborhoods.map((zone) => (
+          {cityData.zones.map((zone) => (
             <PlaceList
-              key={zone.name}
+              key={zone.zone}
               city={city}
-              zone={zone.name}
-              subAreas={zone.subAreas ?? [zone.name]}
+              zone={zone.zone}
+              subAreas={[]}
             />
           ))}
         </div>

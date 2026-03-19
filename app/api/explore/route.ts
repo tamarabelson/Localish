@@ -1,7 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 import Anthropic from '@anthropic-ai/sdk';
 import { getCuratedPlacesForZone, Place } from '@/lib/places';
-import { getCityByName } from '@/lib/cities';
 
 const anthropic = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY });
 
@@ -31,11 +30,7 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ error: 'city and zone are required' }, { status: 400 });
   }
 
-  const cityData = getCityByName(city);
-  const zoneData = cityData?.neighborhoods.find((n) => n.name === zone);
   const curatedPlaces = getCuratedPlacesForZone(city, zone);
-
-  const subAreas = zoneData?.subAreas?.join(', ') ?? zone;
 
   const curatedSection = curatedPlaces.length > 0
     ? `The user has personally curated these spots they love:\n${curatedPlaces
@@ -43,7 +38,7 @@ export async function POST(req: NextRequest) {
         .join('\n')}\n\nUse these as a style and quality reference. Suggest places that would appeal to someone who loves these spots.`
     : `No curated picks yet — suggest great spots based on your knowledge of this area.`;
 
-  const prompt = `You are a knowledgeable local recommending restaurants and coffee shops in ${zone} in ${city} (covering: ${subAreas}).
+  const prompt = `You are a knowledgeable local recommending restaurants and coffee shops in ${zone} in ${city}.
 
 ${curatedSection}
 
