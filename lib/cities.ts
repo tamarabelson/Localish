@@ -190,6 +190,12 @@ export const CITIES: City[] = [
         subAreas: ['Notting Hill', 'Portobello Road Market', 'Ladbroke Grove', 'Westbourne Grove'],
         center: [-0.2014, 51.5138],
       },
+      {
+        name: 'Marylebone & Mayfair',
+        description: 'Village high street, independent boutiques, art dealers, private members clubs',
+        subAreas: ['Marylebone High Street', 'Marylebone Village', 'Mayfair', 'Mount Street', 'Grosvenor Square'],
+        center: [-0.1540, 51.5150],
+      },
     ],
   },
   {
