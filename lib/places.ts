@@ -29,8 +29,15 @@ export const CURATED_PLACES: CityPlaces[] = [
     city: 'New York',
     zones: [
       { zone: 'Uptown', places: [] },
-      { zone: 'Midtown', places: [] },
+      { zone: 'Midtown', places: [
+        { name: 'Monkey Bar', type: 'restaurant', subArea: 'Midtown' },
+        { name: 'Hillstone', type: 'restaurant', subArea: 'Nomad' },
+        { name: 'The Odeon', type: 'restaurant', subArea: 'Tribecca' },
+      ] },
       { zone: 'Downtown', places: [
+        { name: 'The Odeon', type: 'restaurant', subArea: 'Tribecca' },
+        { name: 'Rigor Hill Market', type: 'bakery', subArea: 'Tribecca' },
+        { name: 'Primos', type: 'bar', subArea: 'Tribecca' },
         { name: 'Via Carota', type: 'restaurant', subArea: 'West Village' },
         { name: 'The Commerce Inn', type: 'restaurant', subArea: 'West Village' },
         { name: 'King', type: 'restaurant', subArea: 'SoHo' },
@@ -55,9 +62,16 @@ export const CURATED_PLACES: CityPlaces[] = [
         { name: 'Lilia', type: 'restaurant', subArea: 'Williamsburg' },
         { name: 'The Snail', type: 'restaurant', subArea: 'Greenpoint' },
         { name: 'With Others', type: 'bar', subArea: 'Williamsburg' },
+        { name: 'Pecoraro Latteria', type: 'restaurant', subArea: 'Williamsburg' },
         { name: "Frankel's Delicatessen & Appetizing", type: 'restaurant', subArea: 'Greenpoint', note: 'Best Bagels' },
         { name: 'Bar Americano', type: 'bar', subArea: 'Greenpoint' },
         { name: 'Panzon', type: 'restaurant', subArea: 'Greenpoint', note: 'Amazing Mexican Food' },
+        { name: 'Oxomoco', type: 'restaurant', subArea: 'Greenpoint'},
+        { name: 'Ingas Bar', type: 'restaurant', subArea: 'Brooklyn Heights'},
+        { name: 'Montague Diner', type: 'restaurant', subArea: 'Brooklyn Heights'},
+        { name: 'Sailor', type: 'restaurant', subArea: 'Fort Greene'},
+        { name: 'Vinegar Hill House', type: 'restaurant', subArea: 'Dumbo'},
+        { name: 'Golden Ratio', type: 'bar', subArea: 'Clinton Hill'}
       ]},
     ],
   },
