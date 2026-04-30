@@ -14,8 +14,8 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Localish — Your local friend's guide",
-  description: "AI-generated day itineraries for cities, written in the voice of a knowledgeable local.",
+  title: "Localish — Spend a day like a local",
+  description: "Smart, walkable itineraries across nearby neighborhoods — from morning coffee to evening drinks. Built for people who want to experience a city, not just see it.",
 };
 
 export default function RootLayout({
@@ -24,7 +24,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="scroll-smooth">
       <body className={`${playfair.variable} ${inter.variable} font-sans antialiased bg-[#FAFAF8]`}>
         {children}
       </body>
