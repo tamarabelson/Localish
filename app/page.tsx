@@ -51,10 +51,10 @@ export default function Home() {
       <section className="py-28 px-6 bg-slate-900 text-white">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="font-display text-4xl md:text-5xl font-bold mb-7 leading-tight">
-            Planning a trip shouldn't feel like work
+            Planning a trip shouldn&apos;t feel like work
           </h2>
           <p className="text-lg text-slate-300 leading-relaxed">
-            Most travel tools give you either a long list of places with no structure, or a packed itinerary that doesn't make sense geographically. You end up jumping across the city, wasting time figuring out logistics, and missing the places locals actually love.
+            Most travel tools give you either a long list of places with no structure, or a packed itinerary that doesn&apos;t make sense geographically. You end up jumping across the city, wasting time figuring out logistics, and missing the places locals actually love.
           </p>
         </div>
       </section>
@@ -183,10 +183,10 @@ export default function Home() {
       <section className="py-28 px-6 bg-slate-900 text-white text-center">
         <div className="max-w-3xl mx-auto">
           <h2 className="font-display text-4xl md:text-5xl font-bold mb-7 leading-tight">
-            Travel like you didn't Google anything
+            Travel like you didn&apos;t Google anything
           </h2>
           <p className="text-lg text-slate-300 leading-relaxed mb-12">
-            The best days in a city aren't planned step-by-step — they just flow. Localish helps you get that feeling, instantly.
+            The best days in a city aren&apos;t planned step-by-step — they just flow. Localish helps you get that feeling, instantly.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
